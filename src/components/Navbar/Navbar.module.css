@@ -1,0 +1,11 @@
+.colorItems {
+    color: black !important;
+}
+.colorItems:hover {
+    opacity: .7;
+    transition: .3s;
+}
+.logo{
+    width: auto;
+    height: 80px;
+}
