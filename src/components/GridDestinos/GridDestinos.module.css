@@ -1,0 +1,20 @@
+.imagen{
+    height: 125px;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.grid{
+    flex-wrap: nowrap;
+    overflow: hidden;
+    gap: 30px;
+}
+.cardDestinos{
+    border-radius: 15px;
+}
+.cardDestinos:hover{
+    cursor: pointer;
+    scale: 1.1;
+    opacity: 0.9;
+    transition: 0.3s;
+}
