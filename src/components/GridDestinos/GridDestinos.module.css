@@ -9,16 +9,17 @@
     overflow-x: scroll;
     gap: 30px;
     scroll-behavior: smooth;
+    gap: 40px;
 }
 .left {
     opacity: 70%;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 .right {
     opacity: 70%;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 .cardDestinos {
     border-radius: 15px;
