@@ -1,0 +1,17 @@
+.boton{
+    border: none;
+    background: #457d97;
+    border-radius: 10px;
+    color: white;
+}
+.boton:hover{
+    opacity: 0.8;
+    color: black;
+    transition: 0.3s;
+    scale: 1.1;
+}
+@media (max-width: 576px) {
+    .ocultar {
+        display: none;
+    }
+}

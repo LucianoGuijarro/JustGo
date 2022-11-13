@@ -4,7 +4,7 @@ import logo from '../../img/logo.jpg'
 const Navbar = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg">
+            <nav className={`navbar navbar-expand-lg ${styles.colorFondo}`}>
                 <div className="container">
                     <a class="navbar-brand" href="/">
                         <img className={styles.logo} src={logo} alt="Logo" />
@@ -21,7 +21,7 @@ const Navbar = () => {
                                 <a className={`${styles.colorItems} fw-bold nav-link dropdown-toggle`} href="/" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Working Holidays
                                 </a>
-                                <ul className="dropdown-menu shadow" aria-labelledby="navbarDropdownMenuLink">
+                                <ul className={`dropdown-menu shadow ${styles.colorFondo}`} aria-labelledby="navbarDropdownMenuLink">
                                     <li><a className="dropdown-item" href="/">¿Que es una Working Holidays?</a></li>
                                     <li><a className="dropdown-item" href="/">Ver destinos!</a></li>
                                 </ul>
