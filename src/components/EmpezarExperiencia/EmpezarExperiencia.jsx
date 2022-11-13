@@ -29,8 +29,8 @@ const EmpezarExperiencia = () => {
                     </div>
                 </div>
             </div>
-            <div className={`d-flex justify-content-center ${styles.ocultar}`}>
-                <button className={`${styles.boton} mb-5 p-2 fw-bold fs-5`}>Mas informacion</button>
+            <div className={`d-flex justify-content-center`}>
+                <button className={`${styles.boton} ${styles.ocultar} mb-5 p-2 fw-bold fs-5`}>Mas informacion</button>
             </div>
         </>
     )

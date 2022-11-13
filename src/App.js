@@ -3,6 +3,7 @@ import Banners from './components/Banners/Banners';
 import EmpezarExperiencia from './components/EmpezarExperiencia/EmpezarExperiencia';
 import GridDestinos from './components/GridDestinos/GridDestinos';
 import Navbar from './components/Navbar/Navbar';
+import InformacionWH from './components/QueEsWorkingHolidays/InformacionWH';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Banners />
     <GridDestinos />
     <EmpezarExperiencia  />
+    <InformacionWH />
     </>
   );
 }
