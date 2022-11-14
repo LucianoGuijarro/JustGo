@@ -1,5 +1,5 @@
 .colorFondo {
-    background: #f7d683;
+    background: #ebcc6e;
 }
 
 .cardRow {
@@ -7,6 +7,7 @@
 }
 
 .cardTexto {
+    background: white;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
