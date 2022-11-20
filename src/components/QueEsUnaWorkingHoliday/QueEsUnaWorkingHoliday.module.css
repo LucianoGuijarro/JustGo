@@ -1,0 +1,16 @@
+.colorLetra{
+    color: #457d97;
+}
+.imagen{
+    height: 350px;
+}
+.tamañoLetra{
+   font-size: 4rem;
+}
+.imagenIcono{
+    height: 200px;
+    width: 200px;
+}
+.columnasDerechas{
+    margin-top: 150px;
+}

@@ -1,5 +1,6 @@
 import styles from "./Navbar.module.css";
 import logo from '../../img/logo.jpg'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -22,7 +23,7 @@ const Navbar = () => {
                                     Working Holidays
                                 </a>
                                 <ul className={`dropdown-menu shadow ${styles.colorFondo}`} aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a className="dropdown-item" href="/">¿Que es una Working Holidays?</a></li>
+                                    <li><Link to={'/que-es-una-working-holiday'} className="dropdown-item" href="/">¿Que es una Working Holidays?</Link></li>
                                     <li><a className="dropdown-item" href="/">Ver destinos!</a></li>
                                 </ul>
                             </li>

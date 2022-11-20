@@ -1,20 +1,27 @@
 import './App.css';
-import Banners from './components/Banners/Banners';
-import EmpezarExperiencia from './components/EmpezarExperiencia/EmpezarExperiencia';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 import Footer from './components/Footer/Footer';
-import GridDestinos from './components/GridDestinos/GridDestinos';
 import Navbar from './components/Navbar/Navbar';
-import InformacionWH from './components/QueEsWorkingHolidays/InformacionWH';
+import Inicio from './components/Inicio/Inicio';
+import Error404 from './components/Error404/Error404';
+import QueEsUnaWorkingHoliday from './components/QueEsUnaWorkingHoliday/QueEsUnaWorkingHoliday';
 
 function App() {
   return (
     <>
-    <Navbar />
-    <Banners />
-    <GridDestinos />
-    <EmpezarExperiencia  />
-    <InformacionWH />
-    <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Inicio />} />
+          <Route path='/*' element={<Error404 />} />
+          <Route path='/que-es-una-working-holiday' element={<QueEsUnaWorkingHoliday />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
