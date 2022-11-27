@@ -7,6 +7,7 @@ import imagen4 from '../../img/calendario.png';
 import imagen5 from '../../img/permite trabajar.png';
 import imagen6 from '../../img/La gestionas vos.png';
 import imagen7 from '../../img/Una por destino.png';
+import { MdCheckCircleOutline } from "react-icons/md";
 
 const QueEsUnaWorkingHoliday = () => {
     return (
@@ -67,8 +68,46 @@ const QueEsUnaWorkingHoliday = () => {
                         </div>
                     </div>
                 </section>
-                <section className='container'>
+                <section className='container py-5 '>
                     <h2 className={`text-center fw-bold ${styles.tamañoLetra} ${styles.colorLetra} py-5`}>Beneficios</h2>
+                    <div className="row d-flex justify-content-center">
+                        <div className="col-5">
+                            <div className='d-flex align-items-center mb-4'>
+                                <MdCheckCircleOutline size={70} />
+                                <p className={`p-0 my-0 ms-3 fs-5 ${styles.colorLetra}`}>No hay agencias de por medio</p>
+                            </div>
+                            <div className='d-flex align-items-center mb-4'>
+                                <MdCheckCircleOutline size={70} />
+                                <p className={`p-0 my-0 ms-3 fs-5 ${styles.colorLetra}`}>Las visas son faciles de conseguir</p>
+                            </div>
+                            <div className='d-flex align-items-center mb-4'>
+                                <MdCheckCircleOutline size={70} />
+                                <p className={`p-0 my-0 ms-3 fs-5 ${styles.colorLetra}`}>Destinos con excelente calidad de vida</p>
+                            </div>
+                            <div className='d-flex align-items-center mb-4'>
+                                <MdCheckCircleOutline size={70} />
+                                <p className={`p-0 my-0 ms-3 fs-5 ${styles.colorLetra}`}>Aprender idiomas y conocer gente</p>
+                            </div>
+                        </div>
+                        <div className="col-5">
+                            <div className='d-flex align-items-center mb-4'>
+                                <MdCheckCircleOutline size={70} />
+                                <p className={`p-0 my-0 ms-3 fs-5 ${styles.colorLetra}`}>Ahorras en USD tanto como te sea posible</p>
+                            </div>
+                            <div className='d-flex align-items-center mb-4'>
+                                <MdCheckCircleOutline size={70} />
+                                <p className={`p-0 my-0 ms-3 fs-5 ${styles.colorLetra}`}> Algunos paises permiten extender la visa</p>
+                            </div>
+                            <div className='d-flex align-items-center mb-4'>
+                                <MdCheckCircleOutline size={70} />
+                                <p className={`p-0 my-0 ms-3 fs-5 ${styles.colorLetra}`}>Tenes la posibilidad de trabajar de tu profesion</p>
+                            </div>
+                            <div className='d-flex align-items-center mb-4'>
+                                <MdCheckCircleOutline size={70} />
+                                <p className={`p-0 my-0 ms-3 fs-5 ${styles.colorLetra}`}>Buenas para empezar sin queres vivir en otro pais</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </>
