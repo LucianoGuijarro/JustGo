@@ -8,6 +8,9 @@ import imagen5 from '../../img/permite trabajar.png';
 import imagen6 from '../../img/La gestionas vos.png';
 import imagen7 from '../../img/Una por destino.png';
 import { MdCheckCircleOutline } from "react-icons/md";
+import imagen8 from '../../img/WorkStudy&WorkingHoliday.png';
+import imagen9 from '../../img/signo infinito.png';
+import imagen10 from '../../img/imagen reloj.png';
 
 const QueEsUnaWorkingHoliday = () => {
     return (
@@ -18,7 +21,7 @@ const QueEsUnaWorkingHoliday = () => {
                     <div className="row justify-content-center">
                         <div className="col-5 d-flex justify-content-center flex-column p-0">
                             <h2 className={`fw-bold ${styles.colorLetra} ${styles.tamañoLetra}`}>Animate a viajar, vivir y trabajar en el exterior</h2>
-                            <p className='my-5'>Las visas Working Holiday son un tipo de visas las cuales te permiten viajar a un determinado pais con
+                            <p className='my-5 fs-5'>Las visas Working Holiday son un tipo de visas las cuales te permiten viajar a un determinado pais con
                                 el objetivo de trabajar durante un cierto tiempo y conocer, recorrer y sumergirte en su cultura
                                 durante 1 año entero. Vas a poder viajar, recorrer lugares hermosos, conocer mucha gente, aprender
                                 idiomas, sobre mmuchas culturas y tambien vas a poder ahorrar mucho dinero
@@ -68,7 +71,7 @@ const QueEsUnaWorkingHoliday = () => {
                         </div>
                     </div>
                 </section>
-                <section className='container py-5 '>
+                <section className='container'>
                     <h2 className={`text-center fw-bold ${styles.tamañoLetra} ${styles.colorLetra} py-5`}>Beneficios</h2>
                     <div className="row d-flex justify-content-center">
                         <div className="col-5">
@@ -108,6 +111,81 @@ const QueEsUnaWorkingHoliday = () => {
                             </div>
                         </div>
                     </div>
+                </section>
+                <section className='container py-5'>
+                    <article className="row justify-content-center">
+                        <div className="col-6">
+                            <h2 className={`${styles.tamañoLetra} ${styles.colorLetra} fw-bold`}>¿Hay diferencia con las visas "Work and Travel"?</h2>
+                            <p className='mt-5 fs-5'>Aunque parezcan parecidas, no es lo mismo. Ya que las visas "Work and Travel" son visas en las
+                                cuales ya todo esta predeterminado de ante mano como por ej: El destino al que iras, el trabajo que harás,
+                                donde te quedarás y en fecha volverás
+                            </p>
+                        </div>
+                        <div className="col-5 d-flex justify-content-center">
+                            <img src={imagen8} alt="WorkAndTravelWorkingHoliday" className={`${styles.imagen8}`} />
+                        </div>
+                    </article>
+                    <article className='my-5'>
+                        <div className="row d-flex justify-content-around">
+                            <div className={`col-4 ${styles.margenSection}`}>
+                                <h2 className={`${styles.colorLetra} fs-1 fw-bold`}>Mas trabajos</h2>
+                                <p>Es verdad que al trabajo lo tenes que buscar vos, pero podes cambiar cuantas veces quieras
+                                    de trabajo. Incluso podes trabajar de lo que vos estudiaste
+                                </p>
+                            </div>
+                            <div className={`col-4 ${styles.margenSection}`}>
+                                <h2 className={`fs-1 fw-bold`}>Mas trabajos</h2>
+                                <p className={`${styles.colorLetra}`}>Es verdad que al trabajo lo tenes que buscar vos, pero podes cambiar cuantas veces quieras
+                                    de trabajo. Incluso podes trabajar de lo que vos estudiaste
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article className='my-5'>
+                        <div className="row d-flex justify-content-around">
+                            <div className={`col-4 ${styles.margenSection}`}>
+                                <p className={`fs-1 fw-bold`}>Mas trabajos</p>
+                                <p className={`${styles.colorLetra}`}>Es verdad que al trabajo lo tenes que buscar vos, pero podes cambiar cuantas veces quieras
+                                    de trabajo. Incluso podes trabajar de lo que vos estudiaste
+                                </p>
+                            </div>
+                            <div className={`col-4 ${styles.margenSection}`}>
+                                <p className={`${styles.colorLetra} fs-1 fw-bold`}>Mas trabajos</p>
+                                <p>Es verdad que al trabajo lo tenes que buscar vos, pero podes cambiar cuantas veces quieras
+                                    de trabajo. Incluso podes trabajar de lo que vos estudiaste
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section className='container py-5'>
+                    <h2 className={`text-center fw-bold ${styles.tamañoLetra} ${styles.colorLetra} py-3`}>¿Cuando puedo solicitar estas visas?</h2>
+                    <p className={`${styles.colorLetra} fs-5 text-center m-0`}>Va a depender del destino que elijas, ya que algunos tienen visas limitadas y otros tienen cantidad ilimitada por año.</p>
+                    <div className="row mt-5 d-flex justify-content-around">
+                        <div className="col-3">
+                            <img src={imagen9} alt="Signo infinito" className={`${styles.imagen9} m-0 p-0 pb-4`} />
+                            <p className={`${styles.colorLetra} fw-bold fs-2 m-0 mt-4 p-0`}>Destinos con</p>
+                            <p className={`fw-bold fs-3 m-0`}>Cupos ilimitados</p>
+                            <p className='fs-5'><span className={`${styles.colorLetra} fw-bold`}>En cualquier fecha</span><br />Estos destinos al tener Visas Working Holidays ilimitadas estan disponibles en cualquier momento del año.<br /> Quiere decir que estan disponibles para aplicar en cualquier momento del año.</p>
+                        </div>
+                        <div className="col-3">
+                            <img src={imagen10} alt="Reloj" className={`${styles.imagen10} m-0 p-0`} />
+                            <p className={`${styles.colorLetra} fw-bold fs-2 m-0 mt-4 p-0`}>Destinos con</p>
+                            <p className={`fw-bold fs-3 m-0`}>Cupos limitados</p>
+                            <p className='fs-5'><span className={`${styles.colorLetra} fw-bold`}>En fechas especificas</span><br />Los destinos que tienen visas limitadas, estan disponibles en ciertas fechas especificas<br /> Por eso es importante que al momento se abran tengas todo claro para poder aplicar, para eso estan nuestras guias.</p>
+                        </div>
+                    </div>
+                </section>
+                <section className='container'>
+                    <h2 className={`text-center fw-bold fs-1 ${styles.colorLetra} py-3`}>Otros detalles sobre las Visas Working Holidays</h2>
+                    <h3 className='mt-5 mb-4'>¿Que tengo permitido hacer con una Woking Holiday Visa?</h3>
+                    <p>Esto depende de cada pais de destino, ya que cada pais pone sus propios terminos y condiciones, pero se podria decir
+                        te permiten trabajar y residir dentro de ese pais durante 12 meses. Lo mejor es que ustedes mismos la pueden obtener,
+                        siguiendo nuestros pasos y consejos en las guias maestras que tenemos.
+                    </p>
+                    <p>Es decir, que no hace falta que le paguen a ninguna agencia ni empresa de viajes. En esta web encontraras todo lo que necesitas saber
+                        para poder obtener tu visa vos mismo.
+                    </p>
                 </section>
             </div>
         </>

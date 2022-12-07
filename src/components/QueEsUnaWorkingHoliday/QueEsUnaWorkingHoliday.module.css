@@ -1,16 +1,37 @@
-.colorLetra{
+.colorLetra {
     color: #457d97;
 }
-.imagen{
+
+.imagen {
     height: 350px;
 }
-.tamañoLetra{
-   font-size: 4rem;
+
+.tamañoLetra {
+    font-size: 4rem;
 }
-.imagenIcono{
+
+.imagenIcono {
     height: 200px;
     width: 200px;
 }
-.columnasDerechas{
+
+.columnasDerechas {
     margin-top: 150px;
+}
+
+.imagen8 {
+    height: 450px;
+}
+
+.imagen9 {
+    height: auto;
+    width: 70%;
+}
+
+.imagen10 {
+    width: 43%;
+}
+
+.margenSection {
+    margin-top: 5rem;
 }
