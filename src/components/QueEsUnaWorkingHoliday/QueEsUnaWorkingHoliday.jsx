@@ -178,13 +178,60 @@ const QueEsUnaWorkingHoliday = () => {
                 </section>
                 <section className='container'>
                     <h2 className={`text-center fw-bold fs-1 ${styles.colorLetra} py-3`}>Otros detalles sobre las Visas Working Holidays</h2>
-                    <h3 className='mt-5 mb-4'>¿Que tengo permitido hacer con una Woking Holiday Visa?</h3>
-                    <p>Esto depende de cada pais de destino, ya que cada pais pone sus propios terminos y condiciones, pero se podria decir
-                        te permiten trabajar y residir dentro de ese pais durante 12 meses. Lo mejor es que ustedes mismos la pueden obtener,
+                    <h3 className='mt-5 mb-4 fs-2'>¿Que tengo permitido hacer con una Woking Holiday Visa?</h3>
+                    <p className={`${styles.tamañoLetraRespuestas}`}>
+                        Esto depende de cada pais de destino, ya que cada pais pone sus propios terminos y condiciones, pero se podria decir que <strong>te permiten trabajar y residir dentro de ese pais durante 12 meses</strong>.
+                        Lo mejor es que ustedes mismos la pueden obtener,
                         siguiendo nuestros pasos y consejos en las guias maestras que tenemos.
                     </p>
-                    <p>Es decir, que no hace falta que le paguen a ninguna agencia ni empresa de viajes. En esta web encontraras todo lo que necesitas saber
+                    <p className={`${styles.tamañoLetraRespuestas}`}>
+                        Es decir, <strong>no hace falta que le paguen a ninguna agencia ni empresa de viajes</strong>. En esta web encontraras todo lo que necesitas saber
                         para poder obtener tu visa vos mismo.
+                    </p>
+                    <h3 className='mt-5 mb-4 fs-2'>¿Que cosas no puedo hacer con una Working Holiday Visa?</h3>
+                    <p className={`${styles.tamañoLetraRespuestas}`}>
+                        <strong>Esta visa les permite trabajar en el pais que se las otorga</strong>. Esto quiere decir que si aplicaste a la visa de Dinamarca por ejemplo,
+                        no podes trabajar en otro pais que no sea Dinamarca, si quisieras trabajar en Alemania, Francia, etc deberias aplicar
+                        a las visas de esos paises propiamente dichos.
+                    </p>
+                    <p className={`${styles.tamañoLetraRespuestas}`}>
+                        Otro tema importante es que la visa te otorga permiso para permanecer legal durante 12 meses, <strong>pero encontrar trabajo y alojamiento ya corre por tu cuenta</strong>,
+                        pero a no preocuparse ya que si el pais brinda la posibilidad
+                        de esta visa es porque trabajos hay muchos.
+                    </p>
+                    <h3 className='mt-5 mb-4 fs-2'>¿Es posible ahorrar mucho dinero con las Working Holidays?</h3>
+                    <p className={`${styles.tamañoLetraRespuestas}`}>
+                        La respuesta es si, en algunos paises mas que en otros pero en todos podras ahorrar bastante dinero, de hecho
+                        por ej en Australia se puede llegar a ahorrar USD 1500 por mes o incluso mas dependiendo del trabajo que hagas.
+                    </p>
+                    <p className={`${styles.tamañoLetraRespuestas}`}>
+                        Por supuesto que esto varia segun cada uno, el trabajo y las horas que hagan en el mismo, de sus gastos, de su 
+                        estilo de vida, etc. Pero en todos los paises tendran la posibilidad de ahorrar dinero. <strong className={`${styles.colorLetra}`}>Si quieres puedes ver nuestro ranking
+                        de paises en los que mas se ahorra dinero yendo de Working Holidays</strong>.
+                    </p>
+                    <h3 className='mt-5 mb-4 fs-2'>¿Hay paises mas faciles de conseguir esta visa que en otros?</h3>
+                    <p className={`${styles.tamañoLetraRespuestas}`}>
+                        Si, de hecho hay algunos paises donde los requisitos son pocos y los cupos al ser ilimitados son mas faciles 
+                        de conseguir que en otros paises como seria el caso de <strong className={`${styles.colorLetra}`}>Alemania</strong> y <strong className={`${styles.colorLetra}`}>Francia</strong>. <br />
+                        Por otro lado tambien hay paises en los cuales son muy demandados y al ser cupos limitados son dificiles de conseguir
+                        asi es el caso por ej de  <strong className={`${styles.colorLetra}`}>Irlanda</strong> y <strong className={`${styles.colorLetra}`}>Nueva Zelanda</strong>
+                    </p>
+                    <p className={`${styles.tamañoLetraRespuestas}`}>
+                        Tambien influye mucho que pasaporte tengan, ya que si cuentan con pasaporte <strong>Italiano</strong>, <strong>Español</strong> o <strong>Aleman</strong>
+                        por ej, pueden ir a trabajar a muchos paises de Europa incluso sin necesidad de ninguna visa y en caso de que necesiten
+                        igualmente alguna visa los requisitos cambian como en el caso de <strong>Australia</strong> y <strong>Nueva Zelanda</strong> en donde 
+                        con pasaporte europeo los cupos son ilimitados.
+                    </p>
+                    <h3 className='mt-5 mb-4 fs-2'>Diferencia entra una Working Holiday Visa y una Work and Travel USA</h3>
+                    <p className={`${styles.tamañoLetraRespuestas}`}>
+                        Las Visas Work and Travel USA es un tipo de visa en el que se otorga por poco tiemmpo (3 a 4 meses aprox).
+                        <strong> Si lo hacen con una empresa como lo hace la mayoria de las personas siempre terminan trabajando en los mismos lugares. </strong> 
+                        Ademas, este tipo de visa generalmente siempre son para la temporada de invierno en centros de ski.
+                    </p>
+                    <p className={`${styles.tamañoLetraRespuestas} pb-5`}>
+                        En cambio, una <strong>Working Holiday Visa, la gestionan ustedes mismos y no tienen que pagarle a nadie</strong>.
+                        Nosotros creemos que es una experiencia mas enriquecedora ya que todo es por su cuenta y es algo que le servira para el resto 
+                        de su vida y para sus proximas avennturas.
                     </p>
                 </section>
             </div>
