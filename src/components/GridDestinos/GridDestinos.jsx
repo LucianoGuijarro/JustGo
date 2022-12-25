@@ -1,9 +1,18 @@
+import React, { useEffect, useState } from "react";
 import styles from './GridDestinos.module.css';
-import imagenBerlin from '../../img/Berlin.jpg';
+// import imagenBerlin from '../../img/Berlin.jpg';
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
+import clientAxios from '../../config/clientAxios';
+import DestinosCards from "../DestinosCards/DestinosCards";
 
 const GridDestinos = () => {
+    const [destinos, setDestinos] = useState([]);
 
+    useEffect(() => {
+        clientAxios.get('/destinos/destinos').then((response) => {
+            setDestinos(response.data)
+        })
+    }, []);
     const sliderRigth = () => {
         let left = document.getElementById('slider')
         left.scrollLeft = left.scrollLeft + 230;
@@ -18,42 +27,9 @@ const GridDestinos = () => {
             <div className="container my-5 d-flex flex-nowrap align-items-center">
                 <BsArrowLeftCircle className={`${styles.left} mx-4`} onClick={sliderLeft} />
                 <div className={`${styles.grid} py-4 row justify-content-start align-items-center`} id='slider'>
-                    <div className={`${styles.cardDestinos} col-7 col-sm-5 col-md-5 col-lg-2 col-xl-2 shadow border p-0`}>
-                        <img className={`${styles.imagen} img-fluid`} src={imagenBerlin} alt="Berlin" />
-                        <p className='text-center pt-3 fs-4 fw-bold'>Alemania</p>
-                    </div>
-                    <div className={`${styles.cardDestinos} col-7 col-sm-5 col-md-5 col-lg-2 col-xl-2 shadow border p-0`}>
-                        <img className={`${styles.imagen} img-fluid`} src={imagenBerlin} alt="Berlin" />
-                        <p className='text-center pt-3 fs-4 fw-bold'>Alemania</p>
-                    </div>
-                    <div className={`${styles.cardDestinos} col-7 col-sm-5 col-md-5 col-lg-2 col-xl-2 shadow border p-0`}>
-                        <img className={`${styles.imagen} img-fluid`} src={imagenBerlin} alt="Berlin" />
-                        <p className='text-center pt-3 fs-4 fw-bold'>Alemania</p>
-                    </div>
-                    <div className={`${styles.cardDestinos} col-7 col-sm-5 col-md-5 col-lg-2 col-xl-2 shadow border p-0`}>
-                        <img className={`${styles.imagen} img-fluid`} src={imagenBerlin} alt="Berlin" />
-                        <p className='text-center pt-3 fs-4 fw-bold'>Alemania</p>
-                    </div>
-                    <div className={`${styles.cardDestinos} col-7 col-sm-5 col-md-5 col-lg-2 col-xl-2 shadow border p-0`}>
-                        <img className={`${styles.imagen} img-fluid`} src={imagenBerlin} alt="Berlin" />
-                        <p className='text-center pt-3 fs-4 fw-bold'>Alemania</p>
-                    </div>
-                    <div className={`${styles.cardDestinos} col-7 col-sm-5 col-md-5 col-lg-2 col-xl-2 shadow border p-0`}>
-                        <img className={`${styles.imagen} img-fluid`} src={imagenBerlin} alt="Berlin" />
-                        <p className='text-center pt-3 fs-4 fw-bold'>Alemania</p>
-                    </div>
-                    <div className={`${styles.cardDestinos} col-7 col-sm-5 col-md-5 col-lg-2 col-xl-2 shadow border p-0`}>
-                        <img className={`${styles.imagen} img-fluid`} src={imagenBerlin} alt="Berlin" />
-                        <p className='text-center pt-3 fs-4 fw-bold'>Alemania</p>
-                    </div>
-                    <div className={`${styles.cardDestinos} col-7 col-sm-5 col-md-5 col-lg-2 col-xl-2 shadow border p-0`}>
-                        <img className={`${styles.imagen} img-fluid`} src={imagenBerlin} alt="Berlin" />
-                        <p className='text-center pt-3 fs-4 fw-bold'>Alemania</p>
-                    </div>
-                    <div className={`${styles.cardDestinos} col-7 col-sm-5 col-md-5 col-lg-2 col-xl-2 shadow border p-0`}>
-                        <img className={`${styles.imagen} img-fluid`} src={imagenBerlin} alt="Berlin" />
-                        <p className='text-center pt-3 fs-4 fw-bold'>Alemania</p>
-                    </div>
+                    {destinos.map((destino) => {
+                        return <DestinosCards destino={destino} key={destinos.id} />
+                    })}
                 </div>
                 <BsArrowRightCircle className={`${styles.right} mx-4`} onClick={sliderRigth} />
             </div>

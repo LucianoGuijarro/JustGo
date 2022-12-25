@@ -11,6 +11,7 @@ import { MdCheckCircleOutline } from "react-icons/md";
 import imagen8 from '../../img/WorkStudy&WorkingHoliday.png';
 import imagen9 from '../../img/signo infinito.png';
 import imagen10 from '../../img/imagen reloj.png';
+import Suscribete from '../Suscribete/Suscribete';
 
 const QueEsUnaWorkingHoliday = () => {
     return (
@@ -234,6 +235,7 @@ const QueEsUnaWorkingHoliday = () => {
                         de su vida y para sus proximas avennturas.
                     </p>
                 </section>
+                <Suscribete />
             </div>
         </>
     )
