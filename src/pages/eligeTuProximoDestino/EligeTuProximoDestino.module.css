@@ -1,0 +1,36 @@
+.colorFilter {
+    background: #ebcc6e;
+}
+.tamañoLetra {
+    font-size: 4rem;
+}
+.inputs {
+    border: none;
+    outline: none;
+    color: #457d97;
+    font-weight: bold;
+}
+.nacionalidad {
+    width: 25%;
+    color: #457d97;
+}
+.edad {
+    width: 23%;
+    color: #457d97;
+}
+.margen {
+    margin-right: 4rem;
+}
+.boton {
+    border: none;
+    height: 43px;
+    width: 30%;
+    border-radius: 10px;
+    color: #457d97;
+}
+.form {
+    border-radius: 10px;
+}
+.destinos {
+    gap: 1.3rem;
+}

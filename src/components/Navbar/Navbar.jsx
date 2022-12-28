@@ -24,7 +24,7 @@ const Navbar = () => {
                                 </a>
                                 <ul className={`dropdown-menu shadow ${styles.colorFondo}`} aria-labelledby="navbarDropdownMenuLink">
                                     <li><Link to={'/que-es-una-working-holiday'} className="dropdown-item" href="/">¿Que es una Working Holidays?</Link></li>
-                                    <li><a className="dropdown-item" href="/">Ver destinos!</a></li>
+                                    <li><Link to={'/elige-tu-proximo-destino'} className="dropdown-item" href="/">Ver destinos!</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item"> 

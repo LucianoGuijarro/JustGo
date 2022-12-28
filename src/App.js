@@ -9,6 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 import Inicio from './components/Inicio/Inicio';
 import Error404 from './components/Error404/Error404';
 import QueEsUnaWorkingHoliday from './components/QueEsUnaWorkingHoliday/QueEsUnaWorkingHoliday';
+import EligeTuProximoDestino from './pages/eligeTuProximoDestino/EligeTuProximoDestino';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/' element={<Inicio />} />
           <Route path='/*' element={<Error404 />} />
           <Route path='/que-es-una-working-holiday' element={<QueEsUnaWorkingHoliday />} />
+          <Route path='/elige-tu-proximo-destino' element={<EligeTuProximoDestino />} />
         </Routes>
         <Footer />
       </BrowserRouter>
