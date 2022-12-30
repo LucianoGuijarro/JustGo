@@ -34,3 +34,37 @@
 .destinos {
     gap: 1.3rem;
 }
+
+
+@media (max-width: 992px) {
+    .filter992px {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .filter992px {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 650px) {
+    .form {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .nacionalidad {
+        margin: 0 !important;
+        padding-left: 10px;
+        width: 90%;
+    }
+    .edad {
+        padding-left: 10px;
+        width: 90%;
+    }
+    .boton {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 90%;
+    }
+}

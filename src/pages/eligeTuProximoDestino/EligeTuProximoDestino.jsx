@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import DestinosCards from '../../components/DestinosCards/DestinosCards';
+import Suscribete from '../../components/Suscribete/Suscribete';
 import clientAxios from '../../config/clientAxios';
 import styles from './EligeTuProximoDestino.module.css';
 
@@ -12,12 +13,12 @@ const EligeTuProximoDestino = () => {
             setDestinos(response.data)
         })
     }, []);
-    
+
     return (
         <>
             <section className='container-fluid d-flex flex-column align-items-center '>
                 <h1 className={`${styles.tamañoLetra} text-center my-5 fw-bold`}>Viaja y Trabaja por el mundo</h1>
-                <form className={`d-flex w-50 py-3 align-items-end ${styles.form} ${styles.colorFilter}`}>
+                <form className={`d-flex w-50 py-3 align-items-end ${styles.form} ${styles.colorFilter} ${styles.filter992px}`}>
                     <div className={`d-flex flex-column ms-4 fw-bold ${styles.margen} ${styles.nacionalidad}`}>
                         <label>Nacionalidad</label>
                         <select name='paisDeOrigen' id='paisDeOrigen' className={`py-2 text-center ${styles.form} ${styles.inputs} ${styles.inputNacionalidad}`}>
@@ -36,17 +37,18 @@ const EligeTuProximoDestino = () => {
                             <option value="" className='fw-bold'>Mayor de 35 años</option>
                         </select>
                     </div>
-                    <button className={`${styles.boton} fw-bold`}>Consultar!</button>
+                    <button className={`${styles.boton} me-1 fw-bold`}>Consultar!</button>
                 </form>
             </section>
-            <section className='container'>
+            <section className='container my-5'>
                 <h2 className='my-5 text-center'>Destinos para Argentinos</h2>
                 <div className={`row justify-content-around ${styles.destinos}`}>
                     {destinos.map((destino) => {
-                        return <DestinosCards destino={destino} key={destino.id}/>
+                        return <DestinosCards destino={destino} key={destino.id} />
                     })}
                 </div>
             </section>
+            <Suscribete />
         </>
     )
 }
