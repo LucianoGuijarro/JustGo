@@ -1,0 +1,56 @@
+.contenedor {
+    position: relative;
+    left: 105px;
+}
+.tamañoLetraAlemania {
+    font-size: 5rem;
+}
+.imagenIconoArgentina {
+    width: 100px;
+    height: 100px;
+}
+.imagenIconoAlemania {
+    width: 100px;
+    height: 100px;
+}
+.circulo {
+    background: blue;
+    border-radius: 100px;
+    height: 15px;
+    width: 15px;
+}
+.linea{
+    background: blue;
+    width: 100%;
+    height: 3px;
+}
+/* @media (max-width: 1025px) {
+    .contenedor {
+        position: relative;
+        left: 50px;
+    }
+}
+@media (max-width: 821px) {
+    .contenedor {
+        position: relative;
+        left: 50px;
+    }
+} */
+@media (min-width: 600px) and (max-width: 1025px) {
+    .contenedor {
+        position: relative;
+        left: 50px;
+    }
+}
+@media (max-width: 541px) {
+    .contenedor {
+        position: relative;
+        left: 10px;
+    }
+}
+@media (max-width: 451px) {
+    .contenedor {
+        position: relative;
+        left: 25px;
+    }
+}
