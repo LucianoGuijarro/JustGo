@@ -1,7 +1,7 @@
-.contenedor {
+/* .contenedor {
     position: relative;
     left: 105px;
-}
+} */
 .tamañoLetraAlemania {
     font-size: 5rem;
 }
@@ -24,19 +24,7 @@
     width: 100%;
     height: 3px;
 }
-/* @media (max-width: 1025px) {
-    .contenedor {
-        position: relative;
-        left: 50px;
-    }
-}
-@media (max-width: 821px) {
-    .contenedor {
-        position: relative;
-        left: 50px;
-    }
-} */
-@media (min-width: 600px) and (max-width: 1025px) {
+/* @media (min-width: 600px) and (max-width: 1025px) {
     .contenedor {
         position: relative;
         left: 50px;
@@ -53,4 +41,4 @@
         position: relative;
         left: 25px;
     }
-}
+} */
