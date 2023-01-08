@@ -1,0 +1,26 @@
+.letraAcordeonAbajo {
+    font-size: 0.8rem;
+}
+
+.acordeonItem {
+    border-radius: 20px !important;
+}
+
+.acordeonItem:focus {
+    z-index: 3;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none!important;
+}
+
+.acordeonItem:not(.collapsed) {
+    color: black !important;
+    background-color: white !important;
+}
+
+@media (max-width: 700px) {
+    .scroll {
+        flex-wrap: nowrap;
+        overflow-x: scroll !important;
+    }
+}

@@ -4,6 +4,7 @@ import iconoArgentina from '../../../img/icono-argentina.png';
 import iconoAlemania from '../../../img/icono-alemania.png';
 import { GiPlainCircle } from "react-icons/gi";
 import TablaInfo from '../../../components/Tabla/TablaInfo';
+import AcordeonAlemania from '../../../components/AcordeonAlemania/AcordeonAlemania';
 
 const GuiaAlemania = () => {
   return (
@@ -38,6 +39,14 @@ const GuiaAlemania = () => {
           </div>
         </div>
       </div>
+      <section className='container'>
+        <h2 className='text-center my-5'>¡Empezá a armar tu viaje!</h2>
+        <div className="container">
+          <div className="row">
+            <AcordeonAlemania />
+          </div>
+        </div>
+      </section>
     </article>
   )
 }
