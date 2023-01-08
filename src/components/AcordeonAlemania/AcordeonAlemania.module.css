@@ -1,11 +1,21 @@
 .letraAcordeonAbajo {
     font-size: 0.8rem;
 }
-
 .acordeonItem {
     border-radius: 20px !important;
 }
-
+.botonNavAcordeon {
+    color: #457d97;
+    background: none !important;
+}
+.botonNavAcordeon:hover {
+    color: black;
+    scale: none;
+    transition: 0.8s;
+}
+.botonNavAcordeon:focus{
+    border-color: black black #efefef !important;
+}
 .acordeonItem:focus {
     z-index: 3;
     border-color: none !important;
@@ -14,13 +24,35 @@
 }
 
 .acordeonItem:not(.collapsed) {
-    color: black !important;
-    background-color: white !important;
+    color: #457d97 !important;
+    background-color: rgb(248, 244, 244) !important;
 }
-
+.borderNav {
+    border-bottom: 1px solid black;
+}
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #457d97;
+}
+.cardsAcordionColapse {
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 10px;
+}
+.cardsAcordionColapse:hover {
+    opacity: .8;
+    scale: 101%;
+    transition: .3s;
+}
+.icono {
+    border-radius: 5px;
+    background: #e3e2e2;
+    padding: 12px;
+}
 @media (max-width: 700px) {
     .scroll {
         flex-wrap: nowrap;
         overflow-x: scroll !important;
     }
 }
+

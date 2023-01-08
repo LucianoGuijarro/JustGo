@@ -39,9 +39,9 @@ const GuiaAlemania = () => {
           </div>
         </div>
       </div>
-      <section className='container'>
+      <section>
         <h2 className='text-center my-5'>¡Empezá a armar tu viaje!</h2>
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <AcordeonAlemania />
           </div>

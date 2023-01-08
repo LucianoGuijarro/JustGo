@@ -1,28 +1,42 @@
 import React from 'react';
 import styles from './AcordeonAlemania.module.css';
+import { AiOutlineBars } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 const AcordeonAlemania = () => {
     return (
         <div className='col-12'>
             <nav >
-                <ul class={`nav nav-tabs col-12 col-sm-12 col-md-12 col-lg-12 justify-content-center ${styles.scroll}`} id="myTab" role="tablist">
+                <ul class={`nav nav-tabs col-12 col-sm-12 col-md-12 col-lg-12 justify-content-center ${styles.scroll} ${styles.borderNav}`} id="myTab" role="tablist">
                     <li class="nav-item me-1" role="presentation">
-                        <a class={`nav-link active`} id="tramites-tab" href="#tramites" data-bs-toggle="tab" data-bs-target="#tramites" type="button" role="tab" aria-controls="tramites" aria-selected="true">Tramites</a>
+                        <button class={`nav-link active ${styles.botonNavAcordeon}`} id="tramites-tab" href="#tramites" data-bs-toggle="tab" data-bs-target="#tramites" type="button" role="tab" aria-controls="tramites" aria-selected="true">
+                            Tramites
+                        </button>
+                    </li>
+                    <li class="nav-item me-1" role="presentation">
+                        <button class={`nav-link ${styles.botonNavAcordeon}`} href='#tramites' id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                            Primeros pasos
+                        </button>
+                    </li>
+                    <li class="nav-item me-1" role="presentation">
+                        <button class={`nav-link ${styles.botonNavAcordeon}`} id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                            Trabajar
+                        </button>
+                    </li>
+                    <li class="nav-item me-1" role="presentation">
+                        <button class={`nav-link ${styles.botonNavAcordeon}`} id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                            Estudiar
+                        </button>
+                    </li>
+                    <li class="nav-item me-1" role="presentation">
+                        <button class={`nav-link ${styles.botonNavAcordeon}`} id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                            Herramientas
+                        </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" href='#tramites' id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Primeros pasos</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Trabajar</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Estudiar</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Herramientas</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Turismo</button>
+                        <button class={`nav-link ${styles.botonNavAcordeon}`} id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                            Turismo
+                        </button>
                     </li>
                 </ul>
             </nav>
@@ -41,8 +55,45 @@ const AcordeonAlemania = () => {
                                                 </div>
                                             </button>
                                         </div>
-                                        <div id="acordeonWorkinHoliday" class="accordion-collapse collapse" aria-labelledby="WorkinHolidayVisa" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                        <div id="acordeonWorkinHoliday" class={`accordion-collapse collapse ${styles.acordionColapsse}`} aria-labelledby="WorkinHolidayVisa" data-bs-parent="#accordionFlushExample">
+                                            <ul className='p-2'>
+                                                <Link to={'/elige-tu-proximo-destino'}>
+                                                    <li className={`d-flex mx-2 mb-3 ${styles.cardsAcordionColapse}`}>
+                                                        <div className={`py-3 ${styles.icono}`}><AiOutlineBars size={35} /></div>
+                                                        <p className='d-inline ms-2 mb-0 py-3 fs-5'>Working Holiday Alemania: Todo lo que tienes que saber</p>
+                                                    </li>
+                                                </Link>
+                                                <Link to={'/elige-tu-proximo-destino'}>
+                                                    <li className={`d-flex mx-2 mb-3 ${styles.cardsAcordionColapse}`}>
+                                                        <div className={`py-3 ${styles.icono}`}><AiOutlineBars size={35} /></div>
+                                                        <p className='d-inline ms-2 mb-0 py-3 fs-5'>Requisitos Working Holiday Alemania</p>
+                                                    </li>
+                                                </Link>
+                                                <Link to={'/elige-tu-proximo-destino'}>
+                                                    <li className={`d-flex mx-2 mb-3 ${styles.cardsAcordionColapse}`}>
+                                                        <div className={`py-3 ${styles.icono}`}><AiOutlineBars size={35} /></div>
+                                                        <p className='d-inline ms-2 mb-0 py-3 fs-5'>¿Como aplicar a la visa?</p>
+                                                    </li>
+                                                </Link>
+                                                <Link to={'/elige-tu-proximo-destino'}>
+                                                    <li className={`d-flex mx-2 mb-3 ${styles.cardsAcordionColapse}`}>
+                                                        <div className={`py-3 ${styles.icono}`}><AiOutlineBars size={35} /></div>
+                                                        <p className='d-inline ms-2 mb-0 py-3 fs-5'>¿Como conseguir turno en la embajada de Buenos Aires?</p>
+                                                    </li>
+                                                </Link>
+                                                <Link to={'/elige-tu-proximo-destino'}>
+                                                    <li className={`d-flex mx-2 mb-3 ${styles.cardsAcordionColapse}`}>
+                                                        <div className={`py-3 ${styles.icono}`}><AiOutlineBars size={35} /></div>
+                                                        <p className='d-inline ms-2 mb-0 py-3 fs-5'>¿Como conseguir la Visa desde el exterior?</p>
+                                                    </li>
+                                                </Link>
+                                                <Link to={'/elige-tu-proximo-destino'}>
+                                                    <li className={`d-flex mx-2 mb-3 ${styles.cardsAcordionColapse}`}>
+                                                        <div className={`py-3 ${styles.icono}`}><AiOutlineBars size={35} /></div>
+                                                        <p className='d-inline ms-2 mb-0 py-3 fs-5'>¿Como demostrar los fondos?</p>
+                                                    </li>
+                                                </Link>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
